@@ -15,18 +15,18 @@ This guide will help you deploy your Emotional Scrollbar app to GitHub Pages usi
 1. Go to your repository: `https://github.com/apih99/emotionalScrollbar`
 2. Click on **Settings** tab
 3. Scroll down to **Pages** section in the left sidebar
-4. Under **Source**, select **Deploy from a branch**
-5. Select **gh-pages** branch and **/ (root)** folder
-6. Click **Save**
+4. Under **Source**, select **GitHub Actions**
+5. This will automatically use the workflow we created
 
-### 2. Configure Repository Permissions
+### 2. Configure Repository Permissions (Optional)
+
+The workflow now has built-in permissions, but if you encounter issues:
 
 1. In your repository, go to **Settings**
 2. Click on **Actions** in the left sidebar
 3. Click on **General**
 4. Under **Workflow permissions**, select **Read and write permissions**
-5. Check **Allow GitHub Actions to create and approve pull requests**
-6. Click **Save**
+5. Click **Save**
 
 ### 3. Push Your Code
 
@@ -70,14 +70,16 @@ Once deployed, your Emotional Scrollbar will be available at:
 ### Common Issues:
 
 1. **Build fails**: Check the Actions tab for error messages
-2. **404 Error**: Make sure GitHub Pages is enabled and set to `gh-pages` branch
-3. **Permissions Error**: Ensure workflow permissions are set to "Read and write"
+2. **404 Error**: Make sure GitHub Pages source is set to "GitHub Actions"
+3. **Permissions Error**: The workflow now has built-in permissions, but check repository settings if issues persist
+4. **Deployment fails**: Ensure the repository is public or you have GitHub Pro/Team for private repos
 
 ### Debug Steps:
 
 1. Check the **Actions** tab for build logs
-2. Verify the `gh-pages` branch exists after first deployment
+2. Verify GitHub Pages source is set to "GitHub Actions" in repository settings
 3. Make sure the repository is public (or you have GitHub Pro for private repos)
+4. Check if the github-pages environment is created in repository settings
 
 ## 📞 Support
 
