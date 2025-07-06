@@ -1,0 +1,24 @@
+{
+  "name": "emotional-scrollbar",
+  "version": "1.0.0",
+  "description": "An interactive scrollbar that controls a cartoon face's emotions",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": ["react", "animation", "interactive", "scrollbar", "emotions"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.15",
+    "@types/react-dom": "^18.2.7",
+    "@vitejs/plugin-react": "^4.0.3",
+    "vite": "^4.4.5"
+  }
+} 
